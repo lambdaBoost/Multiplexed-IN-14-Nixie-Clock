@@ -1,0 +1,147 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Sunday, September 09, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\designspark-nixie\nixie-schematic.pcb
+Design Title:       
+Created:            09/09/2018 11:49:12
+Last Saved:         09/09/2018 22:15:38
+Editing Time:       560 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Via to Silkscreen error (V-S) at (476.9 507.6) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (482.6 507.6) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (474.4 542.2) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (479.3 542.0) on layer "Top Silkscreen".
+    Silkscreen text 'Y1' overlaps via.
+Via to Silkscreen error (V-S) at (474.8 443.9) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (501.4 439.1) on layer "Top Silkscreen".
+    Silkscreen text 'IC10' overlaps pad.
+Pad to Silkscreen error (P-S) at (491.5 464.0) on layer "Top Silkscreen".
+    Silkscreen text 'R2' overlaps pad.
+Via to Silkscreen Error (V-S) between (515.2 440.7) and (515.2 440.6) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (501.3 466.1) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (491.5 467.8) on layer "Top Silkscreen".
+    Silkscreen text 'R3' overlaps pad.
+Via to Silkscreen Error (V-S) between (493.2 467.9) and (493.2 468.0) on Layer "Top Silkscreen".
+    Silkscreen text 'R3' overlaps via.
+Pad to Silkscreen error (P-S) at (501.1 490.9) on layer "Top Silkscreen".
+    Silkscreen text 'IC11' overlaps pad.
+Via to Silkscreen error (V-S) at (526.5 475.0) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (526.9 484.2) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (508.7 482.6) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (508.4 480.8) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (512.6 488.1) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen Error (V-S) between (522.0 489.0) and (521.9 488.9) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (500.7 467.4) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (494.1 468.6) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (494.1 471.8) on layer "Top Silkscreen".
+    Silkscreen text 'R4' overlaps via.
+Via to Silkscreen error (V-S) at (521.8 493.0) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (491.5 514.8) on layer "Top Silkscreen".
+    Silkscreen text 'R5' overlaps pad.
+Via to Silkscreen error (V-S) at (536.0 544.5) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (535.4 522.4) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (501.4 543.2) on layer "Top Silkscreen".
+    Silkscreen text 'IC12' overlaps pad.
+Via to Silkscreen error (V-S) at (511.9 524.5) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (509.8 537.2) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (518.5 541.8) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (501.3 516.9) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (491.5 518.6) on layer "Top Silkscreen".
+    Silkscreen text 'R6' overlaps pad.
+Via to Silkscreen error (V-S) at (515.7 544.5) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen Error (V-S) between (509.9 548.7) and (509.9 548.6) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (500.7 518.2) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (495.4 520.7) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen Error (V-S) between (476.4 461.0) and (476.3 461.0) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (483.5 513.7) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (483.5 514.4) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (547.2 532.7) on layer "Top Silkscreen".
+    Silkscreen text 'https://br...' overlaps via.
+Via to Silkscreen error (V-S) at (546.9 516.7) on layer "Top Silkscreen".
+    Silkscreen text 'https://br...' overlaps via.
+Via to Silkscreen error (V-S) at (546.7 528.8) on layer "Top Silkscreen".
+    Silkscreen text 'https://br...' overlaps via.
+Via to Silkscreen error (V-S) at (546.9 561.3) on layer "Top Silkscreen".
+    Silkscreen text 'https://br...' overlaps via.
+
+Number of errors found : 42
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              Yes
+Copper Text In Board            Yes
+Min Track Width                 Yes
+Min Annular Ring                Yes
+Min Paste Size                  Yes
+Vias In Pads                    Yes
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+
+
+
+End Of Report.
