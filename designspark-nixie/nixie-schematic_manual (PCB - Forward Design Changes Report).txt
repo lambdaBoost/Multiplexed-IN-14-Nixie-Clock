@@ -1,0 +1,30 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Monday, September 10, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb
+Design Title:       
+Created:            09/09/2018 11:49:12
+Last Saved:         10/09/2018 20:18:42
+Editing Time:       1158 min
+Units:              mm (precision 1)
+
+Disconnected pin "J1.5" from net "pwr-in".
+Disconnected pin "PL2.1" from net "pwr-in".
+Disconnected pin "U7.1" from net "pwr-in".
+Disconnected pin "PL3.3" from net "pwr-in".
+Disconnected pin "PL3.4" from net "pwr-in".
+
+Deleted net "pwr-in".
+
+Added net "+12v".
+Added net "N0267".
+
+Connected pin "J1.5" to net "N0267".
+Connected pin "PL2.1" to net "+12v".
+Connected pin "U7.1" to net "+12v".
+Connected pin "PL3.3" to net "+12v".
+Connected pin "PL3.4" to net "N0267".
+
+
+End Of Report.

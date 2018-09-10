@@ -1,0 +1,17 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Monday, September 10, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb
+Design Title:       
+Created:            09/09/2018 11:49:12
+Last Saved:         10/09/2018 20:18:42
+Editing Time:       1158 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.sch" with PCB "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb"
+==========================================================================================================================================================================================================================================================
+
+
+End Of Report.
