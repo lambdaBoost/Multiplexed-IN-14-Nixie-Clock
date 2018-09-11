@@ -1,19 +1,14 @@
-Design Rule Check Report
-------------------------
+Net Completion Report
+---------------------
 
 Report Written:     Tuesday, September 11, 2018
 Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb
 Design Title:       
 Created:            09/09/2018 11:49:12
-Last Saved:         11/09/2018 12:39:37
-Editing Time:       2135 min
+Last Saved:         10/09/2018 22:31:19
+Editing Time:       2134 min
 Units:              mm (precision 1)
 
 
-Error Markers currently in design
-=================================
-
-No errors found
-
-
+No breaks found, all nets are fully routed.
 End Of Report.
