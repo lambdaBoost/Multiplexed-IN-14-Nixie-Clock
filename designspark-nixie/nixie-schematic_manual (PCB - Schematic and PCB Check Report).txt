@@ -1,12 +1,12 @@
 Schematic and PCB Check Report
 ------------------------------
 
-Report Written:     Monday, September 10, 2018
+Report Written:     Wednesday, September 12, 2018
 Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb
 Design Title:       
 Created:            09/09/2018 11:49:12
-Last Saved:         10/09/2018 20:18:42
-Editing Time:       1158 min
+Last Saved:         12/09/2018 09:23:32
+Editing Time:       3379 min
 Units:              mm (precision 1)
 
 

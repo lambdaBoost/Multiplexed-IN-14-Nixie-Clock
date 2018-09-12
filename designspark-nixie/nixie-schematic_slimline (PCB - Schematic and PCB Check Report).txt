@@ -1,0 +1,17 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Wednesday, September 12, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_slimline.pcb
+Design Title:       
+Created:            09/09/2018 11:49:12
+Last Saved:         12/09/2018 16:04:45
+Editing Time:       3772 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_slimline.sch" with PCB "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_slimline.pcb"
+==============================================================================================================================================================================================================================================================
+
+
+End Of Report.

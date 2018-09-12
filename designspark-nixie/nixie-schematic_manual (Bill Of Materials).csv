@@ -1,9 +1,9 @@
-"Report Written:","Tuesday, September 11, 2018"
+"Report Written:","Wednesday, September 12, 2018"
 "Design Path:","C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_manual.pcb"
 "Design Title:",
 "Created:","09/09/2018 11:49:12"
-"Last Saved:","10/09/2018 22:31:19"
-"Editing Time:","2133 min"
+"Last Saved:","12/09/2018 12:01:25"
+"Editing Time:","3537 min"
 "Units:","mm (precision 1)"
 
 Bill of Materials generated with DesignSpark PCB - www.DesignSpark.com/pcb
@@ -17,6 +17,7 @@ Bill of Materials generated with DesignSpark PCB - www.DesignSpark.com/pcb
 "IC1","1","ATMEGA328-PU","","DIP1016W53P254L3468H457Q28N","Microchip","ATMEGA328-PU","","","8-bit Microcontrollers - MCU AVR 32K FLSH 1K EE2K SRAM-20MHz IND"
 "C1","1","C317C220J2G5TA","","C317C220J2G5TA","Kemet","C317C220J2G5TA","8703729","","KEMET - C317C220J2G5TA - CAP, MLCC, C0G/NP0, 22PF, 200V, RAD"
 "C2","1","C317C220J2G5TA","","C317C220J2G5TA","Kemet","C317C220J2G5TA","8703729","","KEMET - C317C220J2G5TA - CAP, MLCC, C0G/NP0, 22PF, 200V, RAD"
+"J2","1","FC68148_DC10A","","FC68148DC10A","CLIFF ELECTRONIC COMPONENTS","FC68148 DC10A","","","CLIFF ELECTRONIC COMPONENTS - FC68148 DC10A - SOCKET, PCB, DC POWER, 2.1MM, PK10"
 "Y1","1","FOXSLF_160-20","","HC49SLF_1","Fox","FOXSLF/160-20","1734298","","Crystal 16.000MHz HC49S HC-49-SLF Crystal 16MHz, ??30ppm, 2-Pin"
 "U1","1","IN-14 Nixie","","USER","","","","",""
 "U2","1","IN-14 Nixie","","USER","","","","",""
@@ -24,7 +25,6 @@ Bill of Materials generated with DesignSpark PCB - www.DesignSpark.com/pcb
 "U4","1","IN-14 Nixie","","USER","","","","",""
 "U5","1","IN-14 Nixie","","USER","","","","",""
 "U6","1","IN-14 Nixie","","USER","","","","",""
-"J1","1","KLDX-SMT-0201L-BTR","","KLDXSMT0201LBTR","Kycon","KLDX-SMT-0201L-BTR","","","KYCON - KLDX-SMT-0201L-BTR - DC POWER JACK, 1.3MM, 3A, 24VDC, PCB"
 "R2","1","R 0.25W 5% MCF 4.7K","4.7K","R 0.500","","","","","Carbon Film Resistor"
 "R3","1","R 0.25W 5% MCF 4.7K","4.7K","R 0.500","","","","","Carbon Film Resistor"
 "R4","1","R 0.25W 5% MCF 4.7K","4.7K","R 0.500","","","","","Carbon Film Resistor"
