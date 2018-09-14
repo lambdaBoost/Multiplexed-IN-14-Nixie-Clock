@@ -1,0 +1,30 @@
+Back Annotation Renames Report
+------------------------------
+
+Report Written:     Thursday, September 13, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         13/09/2018 17:02:18
+Editing Time:       108 min
+Units:              mm (precision 1)
+
+Outstanding PCB renames awaiting back annotation to the Schematics design.
+
+Rename Component from "R21" to "R14".
+Rename Component from "R22" to "R15".
+Rename Component from "R20" to "R16".
+Rename Component from "IC9" to "IC7".
+Rename Component from "Q7" to "Q5".
+Rename Component from "U1" to "Uf".
+Rename Component from "U2" to "Ut".
+Rename Component from "U3" to "Uw".
+Rename Component from "U4" to "Ub".
+Rename Component from "U5" to "Ua".
+Rename Component from "Uf" to "U5".
+Rename Component from "Ut" to "U4".
+Rename Component from "Uw" to "U3".
+Rename Component from "Ub" to "U2".
+Rename Component from "Ua" to "U1".
+
+End Of Report.

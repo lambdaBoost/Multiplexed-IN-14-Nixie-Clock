@@ -1,0 +1,163 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Thursday, September 13, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         13/09/2018 16:45:01
+Editing Time:       91 min
+Units:              mm (precision 1)
+
+Added net "N0290".
+Added net "N0292".
+Added net "N0293".
+Added net "N0296".
+Added net "N0298".
+Added net "N0300".
+Added net "N0301".
+Added net "N0302".
+Added net "N0303".
+Added net "N0305".
+Added net "N0306".
+Added net "N0307".
+Added net "N0308".
+Added net "N0309".
+Added net "N0311".
+Added net "N0312".
+Added net "N0313".
+Added net "N0314".
+Added net "N0316".
+Added net "N0317".
+Added net "N0318".
+Added net "N0319".
+Added net "N0321".
+Added net "N0322".
+Added net "N0323".
+Added net "N0324".
+Added net "N0330".
+Added net "N0331".
+Added net "N0405".
+
+Added component reference "Q1" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC3" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R1" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R2" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R3" of component "RC1206JR-0733KL", package "RESC3116X65N".
+Added component reference "Q2" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC4" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R4" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R5" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R6" of component "RC1206JR-0733KL", package "RESC3116X65N".
+Added component reference "Q3" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC5" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R7" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R9" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R10" of component "RC1206JR-0733KL", package "RESC3116X65N".
+Added component reference "Q4" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC6" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R11" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R12" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R13" of component "RC1206JR-0733KL", package "RESC3116X65N".
+Added component reference "Q5" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC7" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R14" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R15" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R16" of component "RC1206JR-0733KL", package "RESC3116X65N".
+Added component reference "Q6" of component "PMBTA92,215", package "SOT95P230X110-3N".
+Added component reference "IC8" of component "KST42MTF", package "SOT95P240X120-3N".
+Added component reference "R17" of component "ERA-8AEB272V", package "RESC3216X70N".
+Added component reference "R18" of component "ERA-8AEB105V", package "RESC3216X70N".
+Added component reference "R19" of component "RC1206JR-0733KL", package "RESC3116X65N".
+
+Renamed component reference "U1" to "U1".
+
+Renamed component reference "U2" to "U2".
+
+Renamed component reference "U3" to "U3".
+
+Renamed component reference "U4" to "U4".
+
+Renamed component reference "U5" to "U5".
+
+
+Connected pin "U1.1" to net "N0298".
+Connected pin "U2.1" to net "N0305".
+Connected pin "U3.1" to net "N0405".
+Connected pin "U4.1" to net "N0330".
+Connected pin "U5.1" to net "N0331".
+Connected pin "Q1.1" to net "N0290".
+Connected pin "Q1.2" to net "VCC".
+Connected pin "Q1.3" to net "N0292".
+Connected pin "IC3.1" to net "N0296".
+Connected pin "IC3.2" to net "GND".
+Connected pin "IC3.3" to net "N0293".
+Connected pin "R1.1" to net "N0401".
+Connected pin "R1.2" to net "N0296".
+Connected pin "R2.1" to net "N0293".
+Connected pin "R2.2" to net "N0290".
+Connected pin "R3.1" to net "N0298".
+Connected pin "R3.2" to net "N0292".
+Connected pin "Q2.1" to net "N0300".
+Connected pin "Q2.2" to net "VCC".
+Connected pin "Q2.3" to net "N0301".
+Connected pin "IC4.1" to net "N0303".
+Connected pin "IC4.2" to net "GND".
+Connected pin "IC4.3" to net "N0302".
+Connected pin "R4.1" to net "N0403".
+Connected pin "R4.2" to net "N0303".
+Connected pin "R5.1" to net "N0302".
+Connected pin "R5.2" to net "N0300".
+Connected pin "R6.1" to net "N0305".
+Connected pin "R6.2" to net "N0301".
+Connected pin "Q3.1" to net "N0306".
+Connected pin "Q3.2" to net "VCC".
+Connected pin "Q3.3" to net "N0307".
+Connected pin "IC5.1" to net "N0309".
+Connected pin "IC5.2" to net "GND".
+Connected pin "IC5.3" to net "N0308".
+Connected pin "R7.1" to net "N0406".
+Connected pin "R7.2" to net "N0309".
+Connected pin "R9.1" to net "N0308".
+Connected pin "R9.2" to net "N0306".
+Connected pin "R10.1" to net "N0405".
+Connected pin "R10.2" to net "N0307".
+Connected pin "Q4.1" to net "N0311".
+Connected pin "Q4.2" to net "VCC".
+Connected pin "Q4.3" to net "N0312".
+Connected pin "IC6.1" to net "N0314".
+Connected pin "IC6.2" to net "GND".
+Connected pin "IC6.3" to net "N0313".
+Connected pin "R11.1" to net "N0407".
+Connected pin "R11.2" to net "N0314".
+Connected pin "R12.1" to net "N0313".
+Connected pin "R12.2" to net "N0311".
+Connected pin "R13.1" to net "N0330".
+Connected pin "R13.2" to net "N0312".
+Connected pin "Q5.1" to net "N0316".
+Connected pin "Q5.2" to net "VCC".
+Connected pin "Q5.3" to net "N0317".
+Connected pin "IC7.1" to net "N0319".
+Connected pin "IC7.2" to net "GND".
+Connected pin "IC7.3" to net "N0318".
+Connected pin "R14.1" to net "N0408".
+Connected pin "R14.2" to net "N0319".
+Connected pin "R15.1" to net "N0318".
+Connected pin "R15.2" to net "N0316".
+Connected pin "R16.1" to net "N0331".
+Connected pin "R16.2" to net "N0317".
+Connected pin "Q6.1" to net "N0321".
+Connected pin "Q6.2" to net "VCC".
+Connected pin "Q6.3" to net "N0322".
+Connected pin "IC8.1" to net "N0324".
+Connected pin "IC8.2" to net "GND".
+Connected pin "IC8.3" to net "N0323".
+Connected pin "R17.1" to net "N0409".
+Connected pin "R17.2" to net "N0324".
+Connected pin "R18.1" to net "N0323".
+Connected pin "R18.2" to net "N0321".
+Connected pin "R19.1" to net "N0328".
+Connected pin "R19.2" to net "N0322".
+
+
+End Of Report.

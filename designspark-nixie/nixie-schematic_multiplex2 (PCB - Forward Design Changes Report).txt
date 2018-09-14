@@ -1,0 +1,15 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Friday, September 14, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         14/09/2018 18:44:20
+Editing Time:       1651 min
+Units:              mm (precision 1)
+
+Net "clock2" changed from net class "Ground" to net class "Signal".
+
+
+End Of Report.

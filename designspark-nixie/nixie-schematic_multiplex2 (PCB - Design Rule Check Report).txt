@@ -1,0 +1,77 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Friday, September 14, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         14/09/2018 23:01:43
+Editing Time:       1902 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Pad to Pad Error (P-P) between (515.1 591.9) and (515.1 592.1) on Layer "[Top]".
+    Error between Component Pad J1.1 (Net 'N0433') and Component Pad J1.2, Gap is 0.3 needs to be 0.3.
+Pad to Pad Error (P-P) between (515.1 592.5) and (515.1 592.8) on Layer "[Top]".
+    Error between Component Pad J1.2 and Component Pad J1.3, Gap is 0.3 needs to be 0.3.
+Track to Pad Error (T-P) between (514.5 592.1) and (514.5 591.8) on Layer "Top Copper".
+    Error between Component Pad J1.2 and Track (Net 'N0433'), Gap is 0.1 needs to be 0.3.
+Pad to Pad Error (P-P) between (515.1 593.2) and (515.1 593.4) on Layer "[Top]".
+    Error between Component Pad J1.3 and Component Pad J1.4, Gap is 0.3 needs to be 0.3.
+Pad to Pad Error (P-P) between (515.1 593.8) and (515.1 594.1) on Layer "[Top]".
+    Error between Component Pad J1.4 and Component Pad J1.5 (Net 'GND'), Gap is 0.3 needs to be 0.3.
+Pad to Board Error (P-B) between (518.0 591.9) and (519.4 591.9) on Layer "[All]".
+    Error between Component Pad J1.8 and Board, Gap is 1.4 needs to be 2.5.
+Pad to Board Error (P-B) between (518.0 596.2) and (519.4 596.2) on Layer "[All]".
+    Error between Component Pad J1.9 and Board, Gap is 1.4 needs to be 2.5.
+
+Number of errors found : 7
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              No
+Copper Text In Board            No
+Min Track Width                 No
+Min Annular Ring                No
+Min Paste Size                  No
+Vias In Pads                    No
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+
+
+
+End Of Report.

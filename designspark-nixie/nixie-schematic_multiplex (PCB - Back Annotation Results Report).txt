@@ -1,0 +1,26 @@
+Back Annotation Results Report
+------------------------------
+
+Report Written:     Thursday, September 13, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         13/09/2018 17:02:18
+Editing Time:       109 min
+Units:              mm (precision 1)
+
+Back Annotate renames from PCB "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex.pcb" to Schematic "C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex.sch".
+
+Error: Could not find  Component " R21".
+Error: Could not find  Component " R22".
+Error: Could not find  Component " R20".
+Error: Could not find  Component " IC9".
+Error: Could not find  Component " Q7".
+Renamed Component from "U1" to "U5".
+Renamed Component from "U2" to "U4".
+Renamed Component from "U3" to "U3".
+Renamed Component from "U4" to "U2".
+Renamed Component from "U5" to "U1".
+
+
+End Of Report.
