@@ -1,12 +1,13 @@
 //TODO:
 //if clock doesnt work try powering it from the analog pins (needs rewire to do this)
-//add timer mode
-//add anti-posion function
 
 
 #include <RTClib.h>
 #include <RealTimeClockDS1307.h>
 #include <Wire.h>
+
+int multiplexDelay = 2; //milliseconds between multiplexing
+int blankingInterval=200; //blanking interval in microseconds
 
 //74141 outputs. remember the serial output is read in order DCBA to determine the displayed number
 int pin_A=3;
@@ -33,6 +34,7 @@ int hrButton = 5;
 int minButtonState=0;
 int hrButtonState=0;
 int lastHrButtonState=0;
+int lastMinButtonState=0;
 
 //in clock or timer mode - clock = 0 timer = 1
 int clockMode=0;
@@ -42,6 +44,25 @@ int timerRunning=0;
 int timerStarted=0;
 int timerStartTime=0;
 int timerTime=0;
+
+//variables for timer
+int timerHundredths = 0;
+int timerSeconds = 0;
+int timerMinutes = 0;
+int timerHours = 0;
+
+//figures to display in timer mode
+int timerHours1 = 0;
+int timerHours2 = 0;
+int timerMinutes1=0;
+int timerMinutes2=0;
+int timerSeconds1=0;
+int timerSeconds2=0;
+int timerHundredths1=0;
+int timerHundredths2=0;
+
+int timerMinsArray[] = {0,0,0,0,0,0};
+int timerHoursArray[] = {0,0,0,0,0,0};
 
 
 RTC_DS1307 rtc;
@@ -154,14 +175,18 @@ void loop() {
   //same order as anode list so the correct tube will always be on
   int timeList[] = { hr1,hr2,mn1,mn2,sec1,sec2 };
   
-
   displayValue = timeList[i];
 
+  if(sec1==0 && sec2==0 && hr2>=2 && hr2<5){
+    antiPoison();
+    }
+
+    else{
   //define the number to display
   setNumber(displayValue);
   //display it on the correct tube
   switchOnAnode(i);
-
+    }
   }
 
   //if in timer mode
@@ -197,7 +222,70 @@ void loop() {
       if(hrButtonState==1){
         timerRunning=0;
       }
-    //TODO - display the time here
+
+      
+    //parse time to display
+       timerHundredths = ((timerTime%1000)/100)*10;
+       timerSeconds = ((timerTime/1000)%60);
+       timerMinutes = ((timerTime/(1000*60))%60);
+       timerHours = ((timerTime/(1000*60*60))%24);
+
+        //hours (only display if more than 60 minutes elapsed
+       if(timerHours <10){
+         timerHours1 = 0;
+          timerHours2 = timerHours;
+          }
+        else{
+          timerHours1=timerHours%10;
+          timerHours2=(timerHours/10U)%10;
+          }
+
+        //minutes
+       if(timerMinutes <10){
+         timerMinutes1 = 0;
+          timerMinutes2 = timerMinutes;
+          }
+        else{
+          timerMinutes1=timerMinutes%10;
+          timerMinutes2=(timerMinutes/10U)%10;
+          }
+
+        //seconds
+        if(timerSeconds <10){
+         timerSeconds1 = 0;
+          timerSeconds2 = timerSeconds;
+          }
+        else{
+          timerSeconds1=timerSeconds%10;
+          timerSeconds2=(timerSeconds/10U)%10;
+          }
+
+        //hundredths
+        if(timerHundredths <10){
+         timerHundredths1 = 0;
+          timerHundredths2 = timerHundredths ;
+          }
+        else{
+          timerHundredths1=timerHundredths %10;
+          timerHundredths2=(timerHundredths /10U)%10;
+          }
+
+       int timerMinsArray[] = {timerMinutes1, timerMinutes2, timerSeconds1, timerSeconds2, timerHundredths1 , timerHundredths2};
+       int timerHoursArray[] = {timerHours1 , timerHours2 , timerMinutes1 , timerMinutes2 , timerSeconds1 , timerSeconds2};
+
+       //display the time
+       //if <1hr elapsed
+       if(timerTime < 3600000){
+          displayValue = timerMinsArray[i];
+          } else{ //if >1hr elapsed
+          displayValue = timerHoursArray[i];
+       }
+          //define the number to display
+          setNumber(displayValue);
+           //display it on the correct tube
+          switchOnAnode(i);
+       
+    
     }
 
     //if timer has been stopped
@@ -209,14 +297,31 @@ void loop() {
         timerStarted=0;
       }
 
-      //TODO - add restart functionality here
-      //TODO - display the time here
+      //restart if right button pressed
+      if(minButtonState==1 && minButtonState != lastMinButtonState){
+        timerStarted=0;
+        timerRunning=0;
+      }
+
+      //display the time
+      //if <1hr elapsed
+       if(timerTime < 3600000){
+          displayValue = timerMinsArray[i];
+          } else{ //if >1hr elapsed
+          displayValue = timerHoursArray[i];
+       }
+          //define the number to display
+          setNumber(displayValue);
+           //display it on the correct tube
+          switchOnAnode(i);
+
+      lastMinButtonState=minButtonState;
     }
 
     
   }
 
-    delay(5);
+    delay(multiplexDelay);
     i+=1;
 }
 
@@ -235,7 +340,7 @@ void setNumber(int value){
   
 }
 
-//function to display a value on a given tube (0 indexed)
+//function to display a value on a given tube by switching on the anode(0 indexed)
 void switchOnAnode(int tubeID){
   //switch off all anodes first
   digitalWrite(pin_hr1, 0) ;
@@ -245,6 +350,27 @@ void switchOnAnode(int tubeID){
   digitalWrite(pin_sec1, 0) ;
   digitalWrite(pin_sec2, 0);
 
+  //blank the tubes
+  delayMicroseconds(blankingInterval);
+  
   digitalWrite(anodeList[tubeID],1);
+}
+
+
+
+//prevents cathode poisoning by switching on all numbers sequentially at increasing speed
+void antiPoison(){
+  for(int totalCycles =10; totalCycles>=1;totalCycles--){
+  int numberCycles=0; //cycles the current number has been displayed for
+  for (int value =0;value<=9;value++){
+    setNumber(value);
+    while(numberCycles <totalCycles);
+    for(int tube=0;tube<=5;tube++){
+      switchOnAnode(tube);
+      delay(multiplexDelay); //multiplex delay
+    }
+    numberCycles=0;
+  }
+  }
 }
 
