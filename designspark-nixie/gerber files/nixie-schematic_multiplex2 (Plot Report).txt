@@ -1,0 +1,252 @@
+Plot Report
+-----------
+
+Report Written:     Monday, September 17, 2018
+Design Path:        C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2.pcb
+Design Title:       
+Created:            13/09/2018 14:02:49
+Last Saved:         17/09/2018 21:49:33
+Editing Time:       6154 min
+Units:              mm (precision 1)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute inches.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+Drill Settings
+==============
+
+    Excellon Format 1    Format 3.5 absolute in inches.
+    Leading zero suppression.
+
+
+Plots Output
+============
+
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Top Documentation.gbr
+
+    Layers:
+    ---------------------
+    Top Documentation
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 1.97
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Top Silkscreen.gbr
+
+    Layers:
+    ------------------
+    Top Silkscreen
+
+    D-Code Shape  (thou)
+    -----------------------
+    D12    Round 1.00
+    D14    Round 7.87
+    D15    Round 5.00
+    D16    Round 10.00
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Top Copper.gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D18    Square 44.61
+    D19    Round 44.61
+    D71    Square 60.00
+    D20    Round 44.49
+    D25    Round 60.00
+    D27    Round 56.00
+    D28    Round 50.00
+    D29    Round 48.00
+    D72    Round 15.00
+    D86    Oval 60.00 X 110.00  Rotation 90
+    D87    Rectangle 23.62 X 41.34  Rotation 90
+    D88    Rectangle 27.56 X 39.37
+    D89    Rectangle 45.28 X 66.93
+    D90    Rectangle 39.37 X 68.90
+    D91    Rectangle 15.75 X 53.15  Rotation 90
+    D92    Rectangle 47.24 X 51.18  Rotation 90
+    D93    Rectangle 74.80 X 84.65
+    D94    Rectangle 40.16 X 71.65
+    D95    Rectangle 41.34 X 70.87  Rotation 90
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Top Copper (Resist).gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D73    Square 54.61
+    D74    Round 54.61
+    D76    Square 70.00
+    D77    Round 54.49
+    D82    Round 70.00
+    D96    Oval 70.00 X 120.00  Rotation 90
+    D97    Rectangle 33.62 X 51.34  Rotation 90
+    D98    Rectangle 37.56 X 49.37
+    D99    Rectangle 55.28 X 76.93
+    D100   Rectangle 49.37 X 78.90
+    D101   Rectangle 25.75 X 63.15  Rotation 90
+    D102   Rectangle 57.24 X 61.18  Rotation 90
+    D103   Rectangle 84.80 X 94.65
+    D104   Rectangle 50.16 X 81.65
+    D105   Rectangle 51.34 X 80.87  Rotation 90
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Top Copper (Paste).gbr
+
+    Layers:
+    --------------
+    Top Copper
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D106   Rectangle 19.62 X 37.34  Rotation 90
+    D107   Rectangle 23.56 X 35.37
+    D108   Rectangle 41.28 X 62.93
+    D109   Rectangle 35.37 X 64.90
+    D110   Rectangle 11.75 X 49.15  Rotation 90
+    D111   Rectangle 43.24 X 47.18  Rotation 90
+    D112   Rectangle 70.80 X 80.65
+    D113   Rectangle 36.16 X 67.65
+    D114   Rectangle 37.34 X 66.87  Rotation 90
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Bottom Copper.gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    ------------------------------------------
+    D18    Square 44.61
+    D19    Round 44.61
+    D71    Square 60.00
+    D20    Round 44.49
+    D25    Round 60.00
+    D27    Round 56.00
+    D28    Round 50.00
+    D29    Round 48.00
+    D72    Round 15.00
+    D86    Oval 60.00 X 110.00  Rotation 90
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Bottom Copper (Resist).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    ------------------------------------------
+    D73    Square 54.61
+    D74    Round 54.61
+    D76    Square 70.00
+    D77    Round 54.49
+    D82    Round 70.00
+    D96    Oval 70.00 X 120.00  Rotation 90
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Bottom Copper (Paste).gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    -----------------------
+
+NC Drill Output
+===============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Drill Data - [Through Hole].drl
+
+    Output:
+    ---------------------------
+    Plated Round Drill Holes
+    Plated Slots
+    Plated Board Outlines
+
+    Tool  Size           Count   ID
+    --------------------------------------
+    T001  0.02400 inches 128   K
+    T002  0.02480 inches 2     D
+    T003  0.02886 inches 44    A
+    T004  0.03200 inches 35    J
+    T005  0.03500 inches 12    C
+    T006  0.03543 inches 78    H
+    --------------------------------------
+    Total                299
+    --------------------------------------
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - Drill Data - [Through Hole] (Unplated).drl
+
+    Output:
+    -----------------------------
+    Unplated Round Drill Holes
+    Unplated Slots
+    Unplated Board Outlines
+
+    Tool  Size           Count   ID
+    --------------------------------------
+    T001  0.02500 inches 1
+    --------------------------------------
+    Total                1
+    --------------------------------------
+
+
+Gerber Output
+=============
+
+C:\Users\ahall\Documents\projects\nixie-clock\nixie-clock\designspark-nixie\nixie-schematic_multiplex2 - outline.gbr
+
+    Layers:
+    ------------------
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D15    Round 5.00
+
+End Of Report.
