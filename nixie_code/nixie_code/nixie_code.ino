@@ -63,5 +63,3 @@ void setTubePair(ShiftRegister74HC595 sr , int number_pair){
   sr.set(6,sr_G);
   sr.set(7,sr_H);
 } 
-
-
