@@ -11,6 +11,9 @@ int B = 2;
 int C = 1;
 int D = 0;
 
+int hrButton = 4;
+int minButton = 5;
+
 
 int MULTIPLEX_DELAY = 2; //pulse width
 int BLANKING_INTERVAL = 200; //microseconds
@@ -45,7 +48,9 @@ void setup() {
   digitalWrite(C, LOW);
   digitalWrite(D, LOW);
 
-  pinMode(4, OUTPUT);
+  
+  pinMode(hrButton, INPUT_PULLUP);
+  pinMode(minButton, INPUT_PULLUP);
   
   //nixie anode pins
   pinMode(6,OUTPUT);
@@ -62,7 +67,10 @@ void setup() {
 }
 
 
-
+int previousHrButton = digitalRead(hrButton);
+int previousMinButton = digitalRead(minButton);
+int hrButtonState;
+int minButtonState;
 
 
 void loop() {
@@ -115,6 +123,28 @@ void loop() {
       delay(MULTIPLEX_DELAY);
       digitalWrite(6,LOW);
       delayMicroseconds(BLANKING_INTERVAL);
+
+
+  //handle button pushed
+  hrButtonState = digitalRead(hrButton);
+  minButtonState = digitalRead(minButton);
+
+  if(hrButtonState == HIGH and previousHrButton == LOW){
+    incrementHour();
+  }
+
+  if(minButtonState == HIGH and previousMinButton == LOW){
+    incrementMinute();
+  }
+
+  if(minButtonState == LOW and hrButtonState ==LOW){
+    zeroSeconds();
+    delay(1000);
+  }
+
+
+  previousHrButton = digitalRead(hrButton);
+  previousMinButton = digitalRead(minButton);
 
 }
 
@@ -203,4 +233,51 @@ void displayDigit(int i){
 
 
 
+}
+
+
+
+void incrementHour(){
+
+  DateTime nw = rtc.now();
+  int yr = nw.year();
+  int mm = nw.month();
+  int da = nw.day();
+  int hr = nw.hour();
+  int mn = nw.minute();
+  int sec = nw.second();
+
+  hr = hr+1;
+  
+  rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
+}
+
+
+void incrementMinute(){
+
+  DateTime nw = rtc.now();
+  int yr = nw.year();
+  int mm = nw.month();
+  int da = nw.day();
+  int hr = nw.hour();
+  int mn = nw.minute();
+  int sec = nw.second();
+
+  mn = mn+1;
+  
+  rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
+}
+
+
+void zeroSeconds(){
+
+  DateTime nw = rtc.now();
+  int yr = nw.year();
+  int mm = nw.month();
+  int da = nw.day();
+  int hr = nw.hour();
+  int mn = nw.minute();
+  int sec = 0;
+  
+  rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
 }
