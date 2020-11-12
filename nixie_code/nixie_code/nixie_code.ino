@@ -17,6 +17,9 @@ int minButton = 5;
 
 int MULTIPLEX_DELAY = 2; //pulse width
 int BLANKING_INTERVAL = 200; //microseconds
+const long CYCLE_INTERVAL = 1000; //interval between changes for cathode poisoning prevention scheme
+int NUM = 0; //start digit for cathode poisoning prevention
+unsigned long previousMillis = 0;
 
 //replace this line when rtc module installed
 //RTC_DS1307 rtc;
@@ -80,8 +83,13 @@ void loop() {
  hr = tm.hour();
  mn = tm.minute();
  sec = tm.second();
- 
 
+ //run anti cathode poisoining for 1 hr at 2am (excessive but thats ok)
+  if(hr ==2){
+    antiPoison();
+  }
+
+  else{
   //get decimal values for each tube
   
   T1 = (hr / 10) % 10;
@@ -124,8 +132,12 @@ void loop() {
       digitalWrite(6,LOW);
       delayMicroseconds(BLANKING_INTERVAL);
 
+  }
 
-  //handle button pushed
+
+  //handle button pushes
+  //increment on button release so second zero doesnt affect hrs and mins
+  //hold both for second zero
   hrButtonState = digitalRead(hrButton);
   minButtonState = digitalRead(minButton);
 
@@ -280,4 +292,42 @@ void zeroSeconds(){
   int sec = 0;
   
   rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
+}
+
+
+//cycle all digits to mitigate cathode poisoning
+void antiPoison(){
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= CYCLE_INTERVAL) {
+    previousMillis = currentMillis;
+    NUM = NUM+1;
+
+    if(NUM >9){
+      NUM = 0;
+    }
+  }
+
+  else{
+      displayDigit(NUM);
+      digitalWrite(6, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(6,LOW);
+      digitalWrite(7, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(7,LOW);
+      digitalWrite(8, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(8,LOW);
+      digitalWrite(9, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(9,LOW);
+      digitalWrite(10, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(10,LOW);
+      digitalWrite(11, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(11,LOW);
+  }
+
 }
