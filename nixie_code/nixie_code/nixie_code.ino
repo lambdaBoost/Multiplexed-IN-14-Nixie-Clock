@@ -3,63 +3,204 @@
 //add button support
 //add anti-posion function
 
-#include <ShiftRegister74HC595.h>
-#include <RTClib.h>
-#include <RealTimeClockDS1307.h>
+#include "RTClib.h"
 #include <Wire.h>
 
-// create shift register objectS (number of shift registers, SER pin, SRCLK pin, RCLK pin)
-ShiftRegister74HC595 srH (1, 8, 9, 10); 
-ShiftRegister74HC595 srM (1, 5, 6, 7); 
-ShiftRegister74HC595 srS (1, 2, 3, 4); 
+int A = 3;
+int B = 2;
+int C = 1;
+int D = 0;
 
-RTC_DS1307 rtc;
+
+int MULTIPLEX_DELAY = 2; //pulse width
+int BLANKING_INTERVAL = 200; //microseconds
+
+//replace this line when rtc module installed
+//RTC_DS1307 rtc;
+RTC_Millis rtc;
+
+// 0 for digit test 1 for voltage test
+int mode = 1;
+
+int hr;
+int mn;
+int sec;
+
+int T1;
+int T2;
+int T3;
+int T4;
+int T5;
+int T6;
 
 void setup() {
+
+  pinMode(A,OUTPUT);
+  pinMode(B,OUTPUT);
+  pinMode(C,OUTPUT);
+  pinMode(D,OUTPUT);
   
-   //use internal pullup resistor for button.
-  pinMode(1 , INPUT_PULLUP)
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+
+  pinMode(4, OUTPUT);
   
-  //set the clock up
-  Serial.begin(9600);
-  delay(2000); //give the clock a chance to be read
+  //nixie anode pins
+  pinMode(6,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(11,OUTPUT);
+
+  //TODO - remove when rtc installed
+  rtc.begin(DateTime(F(__DATE__), F(__TIME__)));
+  
 
 }
+
+
+
+
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  DateTime now =rtc.now();
 
-  setTubePair(srH , now.hour());
-  setTubePair(srM , now.minute());
-  setTubePair(srS, now.second());
+ 
+ DateTime tm = rtc.now();
+ hr = tm.hour();
+ mn = tm.minute();
+ sec = tm.second();
+ 
+
+  //get decimal values for each tube
+  
+  T1 = (hr / 10) % 10;
+  T2 = hr % 10;
+  T3 = (mn / 10) % 10;
+  T4 = mn % 10;
+  T5 = (sec / 10) % 10;
+  T6 = sec % 10;
+  
+
+
+      displayDigit(T1);
+      digitalWrite(11, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(11,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
+      displayDigit(T2);
+      digitalWrite(10, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(10,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
+      displayDigit(T3);
+      digitalWrite(9, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(9,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
+      displayDigit(T4);
+      digitalWrite(8, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(8,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
+      displayDigit(T5);
+      digitalWrite(7, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(7,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
+      displayDigit(T6);
+      digitalWrite(6, HIGH);
+      delay(MULTIPLEX_DELAY);
+      digitalWrite(6,LOW);
+      delayMicroseconds(BLANKING_INTERVAL);
 
 }
 
-// function to display two digits on a given shift registers nixies
-void setTubePair(ShiftRegister74HC595 sr , int number_pair){
+
+
+
+
+void displayDigit(int i){
+
+  if(i==0){
+  digitalWrite(A,LOW);
+  digitalWrite(B,LOW);
+  digitalWrite(C,LOW);
+  digitalWrite(D,LOW);
+  }
   
-  //decimal numbers to display on each nixie
-  int tube_1 = (number_pair ) % 10;
-  int tube_2 = (number_pair / 10U) % 10;
+  if(i==1){
+  digitalWrite(A,HIGH);
+  digitalWrite(B,LOW);
+  digitalWrite(C,LOW);
+  digitalWrite(D,LOW);
+  }
+  
+  if(i==2){
+  digitalWrite(A,LOW);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,LOW);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==3){
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,LOW);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==4){
+  digitalWrite(A,LOW);
+  digitalWrite(B,LOW);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==5){
+  digitalWrite(A,HIGH);
+  digitalWrite(B,LOW);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==6){
+  digitalWrite(A,LOW);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==7){
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  }
+  
+  
+  if(i==8){
+  digitalWrite(A,LOW);
+  digitalWrite(B,LOW);
+  digitalWrite(C,LOW);
+  digitalWrite(D,HIGH);
+  }
+  
+  
+  if(i==9){
+  digitalWrite(A,HIGH);
+  digitalWrite(B,LOW);
+  digitalWrite(C,LOW);
+  digitalWrite(D,HIGH);
+  }
 
-  //passing binary of the desired decimal for a tube to its 74141 to pins DCBA causes it to output the desired digit
-  // most significant bit goes to pin D and least significant to A (contrary to what we may guess)
-  int sr_A = bitRead(tube_1 , 0); //least significant digit
-  int sr_B = bitRead(tube_1 , 1);
-  int sr_C = bitRead(tube_1 , 2);
-  int sr_D = bitRead(tube_1 , 3);
-  int sr_E = bitRead(tube_2 , 0);
-  int sr_F = bitRead(tube_2 , 1);
-  int sr_G = bitRead(tube_2 , 2);
-  int sr_H = bitRead(tube_2 , 3);
 
-  sr.set(0,sr_A);
-  sr.set(1,sr_B);
-  sr.set(2,sr_C);
-  sr.set(3,sr_D);
-  sr.set(4,sr_E);
-  sr.set(5,sr_F);
-  sr.set(6,sr_G);
-  sr.set(7,sr_H);
-} 
+
+}
