@@ -25,6 +25,8 @@ It would be possible to reduce the profile of the PCB further by using a SMD mic
 
 
 ## Arduino code
+As the unit uses an ATMEGA328p DIP chip, it can be programmed using an arduino UNO. Simply upload the code to your UNO, remove the DIP chip and insert it into the holder on the PCB - that's it, no ISP programmer needed.
+
 The code is really pretty simple. The script from the 'nixie_code/nixie_code' directory is all that is needed. Note that in the current configuration, the hour and minute buttons can be pressed to advance the time. Pressing both resets the seconds.
 
 I won't go into details here since the code is commented.
