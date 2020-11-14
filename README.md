@@ -1,4 +1,4 @@
-# nixie-clock
+# Multiplexed IN-14 Nixie Clock
 PCB design and coding for a slimline nixie clock using multiplexing of 6 IN-14 nixie tubes. Powered by a standard Micro USB.
 
 ![Prototype Build](https://github.com/Alex-Hall-Data/nixie-clock/blob/master/images/IN-14.jpg?raw=true)
