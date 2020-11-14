@@ -1,7 +1,7 @@
 # nixie-clock
 PCB design and coding for aa slimline nixie clock using multiplexing of 6 IN-14 nixie tubes. Powered by a standard Micro USB.
 
-![Prototype Build](https://github.com/Alex-Hall-Data/nixie-clock/images/IN-14.jpg)
+![Prototype Build](https://github.com/Alex-Hall-Data/nixie-clock/tree/master/images/IN-14.jpg)
 
 ## Principle of Operation.
 This clock uses a Soviet-era Nixie driver to drive 6 Soviet-era Nixie tubes. The aim of this project was to produce a slimline and aesthetically pleasing clock for a minimal cost. To achieve this, the tubes are multiplexed meaning only a single driver chip is required. Multiplexing is no complicate - it is simply the act of switching the tubes on and off at a high enough frequency that the human eye cannot detect the flicker. By only having one tube on at a given time, only one driver chip is needed, less microprocessor pins are needed and the power consumption is reduced.
