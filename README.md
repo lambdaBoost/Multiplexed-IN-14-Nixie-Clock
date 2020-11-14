@@ -15,8 +15,8 @@ The 'PCB design' directory contains all the files necessary for production of th
 For anyone wanting to improve on the design, which is not perfect, the sehematic and PCB files are also included.
 
 The bill of materials is also included. In addition to the components stated, you will need:
-* 6 X IN-14 nixie tubes and a single K155ID1 nixie driver. 
-* A 74141 driver may also be used but these are rare/expensive and offer no real benefit over the former. 
+* 6 X IN-14 nixie tubes 
+* a single K155ID1 nixie driver. A 74141 driver may also be used but these are rare/expensive and offer no real benefit over the former (the K155ID1 is a Russian copy of the 74141). 
 * A nixie power supply. One that can provide 170V from a 5V DC source is necessary - plenty are available online but check the order of the output pins - the one I used was cheap but seems to work fine for now. It is available [here]( https://bit.ly/2IDABvU).  
 * (OPTIONAL). If you want the clock to keep time when it is unplugged you'll need a DS1307 RTC module like [this](https://www.amazon.co.uk/DS1307-AT24C32-Clock-module-board/dp/B00CWX6UXY). Again, check that the pins are in the same order as that shown. You need them in the order GND,VCC,SDA,SCL.
 * A USB -> micro USB cable to power it.
