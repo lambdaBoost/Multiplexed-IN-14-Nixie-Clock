@@ -26,7 +26,7 @@ unsigned long previousMillis = 0;
 RTC_Millis rtc;
 
 // 0 for digit test 1 for voltage test
-int mode = 1;
+int mode = 0;
 
 int hr;
 int mn;
@@ -85,7 +85,7 @@ void loop() {
  sec = tm.second();
 
  //run anti cathode poisoining for 1 hr at 2am (excessive but thats ok)
-  if(hr ==2){
+  if(hr ==2 or mode==1){
     antiPoison();
   }
 
