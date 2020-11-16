@@ -10,6 +10,9 @@ Rather than attempting to rectify mains voltage, the unit is powered from a +5V 
 
 
 ## PCB design
+
+**Note there are two seperate designs - the original and the rev 2. The original is tested and pictured above sitting on my desk (with some minor modifications to connect the buttons and add decoupling capacitors and add a switch which was not included on the original schematic). The rev 2 fixes some issues discussed below but I have not had this version manufactured so it is currently untested but should work fine providing I didn't make any mistakes fixing up the issues.**
+
 The 'PCB design' directory contains all the files necessary for production of the PCB. For those just wanting to make the clock, the gerber files alone are sufficient - they can be sent to your PCB manufacturer of choice.
 
 For anyone wanting to improve on the design, which is not perfect, the sehematic and PCB files are also included.
