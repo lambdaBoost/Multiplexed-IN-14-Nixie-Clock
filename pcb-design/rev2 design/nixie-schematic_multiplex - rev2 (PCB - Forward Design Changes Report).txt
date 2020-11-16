@@ -5,14 +5,18 @@ Report Written:     Monday, November 16, 2020
 Design Path:        C:\Users\Alex\Documents\nixie-clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
 Design Title:       
 Created:            13/09/2018 13:02:49
-Last Saved:         16/11/2020 22:14:41
-Editing Time:       8994 min
+Last Saved:         16/11/2020 22:28:36
+Editing Time:       9006 min
 Units:              mm (precision 1)
 
-Added component reference "C5" of component "12061C104KAT2A", package "CAPC3216X152N".
+Disconnected pin "S1.1" from net "+5v".
+Disconnected pin "S1.3" from net "N0450".
 
-Connected pin "C5.1" to net "GND".
-Connected pin "C5.2" to net "N0443".
+Deleted net "N0450".
+
+Added net "N0451".
+
+Connected pin "S1.1" to net "N0451".
 
 
 End Of Report.
