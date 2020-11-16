@@ -1,0 +1,83 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Monday, November 16, 2020
+Design Path:        C:\Users\Alex\Documents\nixie-clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
+Design Title:       
+Created:            13/09/2018 13:02:49
+Last Saved:         16/11/2020 22:24:59
+Editing Time:       8997 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Pad to Pad Error (P-P) between (513.0 589.2) and (513.0 589.4) on Layer "[Top]".
+    Error between Component Pad J1.1 (Net 'N0443') and Component Pad J1.2, Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (513.0 589.8) and (513.0 590.0) on Layer "[Top]".
+    Error between Component Pad J1.2 and Component Pad J1.3, Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (513.0 589.4) and (513.0 588.9) on Layer "Top Copper".
+    Error between Component Pad J1.2 and Track (Net 'N0443'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (513.0 590.5) and (513.0 590.7) on Layer "[Top]".
+    Error between Component Pad J1.3 and Component Pad J1.4, Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (513.0 591.1) and (513.0 591.3) on Layer "[Top]".
+    Error between Component Pad J1.4 and Component Pad J1.5 (Net 'GND'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.5 591.1) and (512.5 591.5) on Layer "Top Copper".
+    Error between Component Pad J1.4 and Track (Net 'GND'), Gap is 0.0 needs to be 0.3.
+Track to Pad Error (T-P) between (513.0 591.1) and (513.0 591.5) on Layer "Top Copper".
+    Error between Component Pad J1.4 and Track (Net 'GND'), Gap is 0.0 needs to be 0.3.
+Pad to Board Error (P-B) between (518.4 585.3) and (519.4 585.3) on Layer "[All]".
+    Error between Component Pad J1.MH3 and Board, Gap is 1.0 needs to be 2.5.
+Pad to Board Error (P-B) between (518.4 595.2) and (519.4 595.2) on Layer "[All]".
+    Error between Component Pad J1.MH4 and Board, Gap is 1.0 needs to be 2.5.
+
+Number of errors found : 9
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              No
+Copper Text In Board            No
+Min Track Width                 No
+Min Annular Ring                No
+Min Paste Size                  No
+Vias In Pads                    No
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.

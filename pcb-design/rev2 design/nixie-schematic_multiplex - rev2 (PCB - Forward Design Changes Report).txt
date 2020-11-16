@@ -1,0 +1,18 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Monday, November 16, 2020
+Design Path:        C:\Users\Alex\Documents\nixie-clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
+Design Title:       
+Created:            13/09/2018 13:02:49
+Last Saved:         16/11/2020 22:14:41
+Editing Time:       8994 min
+Units:              mm (precision 1)
+
+Added component reference "C5" of component "12061C104KAT2A", package "CAPC3216X152N".
+
+Connected pin "C5.1" to net "GND".
+Connected pin "C5.2" to net "N0443".
+
+
+End Of Report.

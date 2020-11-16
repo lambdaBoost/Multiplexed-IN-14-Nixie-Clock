@@ -15,8 +15,8 @@ int hrButton = 4;
 int minButton = 5;
 
 
-int MULTIPLEX_DELAY = 2; //pulse width
-int BLANKING_INTERVAL = 200; //microseconds
+int MULTIPLEX_DELAY = 2; //pulse width 2
+int BLANKING_INTERVAL = 200; //microseconds 200
 const long CYCLE_INTERVAL = 1000; //interval between changes for cathode poisoning prevention scheme
 int NUM = 0; //start digit for cathode poisoning prevention
 unsigned long previousMillis = 0;
