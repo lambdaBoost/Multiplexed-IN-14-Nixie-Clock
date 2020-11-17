@@ -1,0 +1,17 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Tuesday, November 17, 2020
+Design Path:        C:\Users\ahall\Documents\projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\original design\nixie-schematic_multiplex.pcb
+Design Title:       
+Created:            13/09/2018 13:02:49
+Last Saved:         19/09/2018 19:36:52
+Editing Time:       8956 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic "C:\Users\ahall\Documents\projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\original design\nixie-schematic_multiplex.sch" with PCB "C:\Users\ahall\Documents\projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\original design\nixie-schematic_multiplex.pcb"
+==============================================================================================================================================================================================================================================================================================
+
+
+End Of Report.

@@ -2,14 +2,12 @@ Forward Design Changes Report
 -----------------------------
 
 Report Written:     Tuesday, November 17, 2020
-Design Path:        C:\Users\ahall\Documents\projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
+Design Path:        C:\Users\ahall\Documents\projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\original design\nixie-schematic_multiplex.pcb
 Design Title:       
 Created:            13/09/2018 13:02:49
-Last Saved:         16/11/2020 22:41:35
-Editing Time:       9008 min
+Last Saved:         19/09/2018 19:36:52
+Editing Time:       8956 min
 Units:              mm (precision 1)
-
-Disconnected pin "S1.1" from net "+5v".
 
 Changed component reference "R3" from component "RC1206JR-0733KL", package "RESC3116X65N" to component "CRGH1206F5K6", package "RESC3116X65N".
 Changed component reference "R6" from component "RC1206JR-0733KL", package "RESC3116X65N" to component "CRGH1206F5K6", package "RESC3116X65N".
@@ -17,10 +15,6 @@ Changed component reference "R10" from component "RC1206JR-0733KL", package "RES
 Changed component reference "R13" from component "RC1206JR-0733KL", package "RESC3116X65N" to component "CRGH1206F5K6", package "RESC3116X65N".
 Changed component reference "R16" from component "RC1206JR-0733KL", package "RESC3116X65N" to component "CRGH1206F5K6", package "RESC3116X65N".
 Changed component reference "R19" from component "RC1206JR-0733KL", package "RESC3116X65N" to component "CRGH1206F5K6", package "RESC3116X65N".
-
-Added net "N0451".
-
-Connected pin "S1.1" to net "N0451".
 
 
 End Of Report.
