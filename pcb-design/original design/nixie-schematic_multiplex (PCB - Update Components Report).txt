@@ -1,0 +1,92 @@
+Update Components Report
+------------------------
+
+Report Written:     Thursday, November 19, 2020
+Design Path:        C:\Users\Alex\Documents\personal-projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\original design\nixie-schematic_multiplex.pcb
+Design Title:       
+Created:            13/09/2018 13:02:49
+Last Saved:         19/11/2020 09:55:28
+Editing Time:       8971 min
+Units:              mm (precision 1)
+
+
+Library Files:
+==============
+
+C:\Users\Alex\Documents\DesignSpark PCB 9.0\Library\User\User.cml
+C:\Users\Alex\Documents\DesignSpark PCB 9.0\Library\Default\DesignSpark.cml
+C:\Users\Alex\Documents\DesignSpark PCB 9.0\Library\Default\ltspice.cml
+C:\Users\Alex\Documents\DesignSpark PCB 9.0\Library\Default\XSpice.cml
+
+Selected items to be updated:
+=============================
+
+
+Components:
+===========
+
+SN74141 (DIP787W53P279L2176H508Q16N)
+
+Symbols:
+========
+
+    (None) 
+
+Additional items to be updated:
+===============================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+    (None) 
+
+Selected items not to be updated  (Same version as library)
+===========================================================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+DIP787W53P279L2176H508Q16N C:\Users\Alex\Documents\DesignSpark PCB 9.0\Library\User\User.psl
+
+Errors accessing items in the library:
+======================================
+
+
+Components:
+===========
+
+    Could not find component 'SN74141' package 'DIP787W53P279L2176H508Q16N'
+
+
+
+Update Components Summary
+=========================
+
+Updating single component.
+Keep component values
+Keep component value positions
+(Remove pad style exceptions on updated components)
+	Selected for update:			   1  Component 
+						   1  Symbol 
+	Selected items to be updated:		   1  Component 
+						   0  Symbols
+	Additional items to be updated:		   0  Components
+						   0  Symbols
+	Selected items NOT to be updated:	   0  Components
+	  (Same version as library)		   1  Symbol 
+Errors getting items from the library:		   1  Component 
+	  (Not found or read error)			   0  Symbols
+
+End Of Report.

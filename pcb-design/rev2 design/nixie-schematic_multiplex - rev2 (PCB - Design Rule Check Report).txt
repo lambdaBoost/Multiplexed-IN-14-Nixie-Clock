@@ -1,12 +1,12 @@
 Design Rule Check Report
 ------------------------
 
-Report Written:     Monday, November 16, 2020
-Design Path:        C:\Users\Alex\Documents\nixie-clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
+Report Written:     Thursday, November 19, 2020
+Design Path:        C:\Users\Alex\Documents\personal-projects\Multiplexed-IN-14-Nixie-Clock\pcb-design\rev2 design\nixie-schematic_multiplex - rev2.pcb
 Design Title:       
 Created:            13/09/2018 13:02:49
-Last Saved:         16/11/2020 22:28:36
-Editing Time:       9007 min
+Last Saved:         17/11/2020 21:17:06
+Editing Time:       9015 min
 Units:              mm (precision 1)
 
 
@@ -31,8 +31,9 @@ Pad to Board Error (P-B) between (518.4 585.3) and (519.4 585.3) on Layer "[All]
     Error between Component Pad J1.MH3 and Board, Gap is 1.0 needs to be 2.5.
 Pad to Board Error (P-B) between (518.4 595.2) and (519.4 595.2) on Layer "[All]".
     Error between Component Pad J1.MH4 and Board, Gap is 1.0 needs to be 2.5.
+Single pin net N0451 on S1.1 at 477.5,595.3
 
-Number of errors found : 9
+Number of errors found : 10
 
 
 Settings
