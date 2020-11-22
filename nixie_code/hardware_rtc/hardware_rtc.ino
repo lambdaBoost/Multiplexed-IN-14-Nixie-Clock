@@ -72,7 +72,7 @@ void setup() {
   if (! rtc.isrunning()) {
   rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   }
-  
+
 
 }
 
@@ -105,11 +105,11 @@ void loop() {
   hrButtonState = digitalRead(hrButton);
   minButtonState = digitalRead(minButton);
 
-  if(hrButtonState == HIGH and previousHrButton == LOW){
+  if(hrButtonState == HIGH and previousHrButton == LOW and millis() > 500 ){
     incrementHour();
   }
 
-  if(minButtonState == HIGH and previousMinButton == LOW){
+  if(minButtonState == HIGH and previousMinButton == LOW and millis() > 500 ){
     incrementMinute();
   }
 
