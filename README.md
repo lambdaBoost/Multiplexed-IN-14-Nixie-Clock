@@ -31,8 +31,8 @@ It would be possible to reduce the profile of the PCB further by using a SMD mic
 As the unit uses an ATMEGA328p DIP chip, it can be programmed using an arduino UNO. Simply upload the code to your UNO, remove the DIP chip and insert it into the holder on the PCB - that's it, no ISP programmer needed.
 
 The code required depends on whether you have a DS1307 module installed:
-* If you have a ds1307 module installed, upload the code at nixie_code/nixie_code/hardware_rtc.ino
-* If you don't, upload the code at nixie_code/nixie_code/software_rtc.ino
+* If you have a ds1307 module installed, upload the code at nixie_code/hardware_rtc
+* If you don't, upload the code at nixie_code/software_rtc
 
 I won't go into details here since the code is commented.
 
