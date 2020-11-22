@@ -17,7 +17,7 @@ For those wanting to just build a clock and not worry about the details, just fo
 * Solder the components to the PCB. Be careful with the nixie tubes - let them cool down between soldering each pin.
 * Upload either the software_rtc.ino' script to your Arduino Uno if you don't have an rtc module installed. If you did but an rtc module, upload the 'hardware_rtc.ino' script.
 * Remove the chip from the Arduino and insert into the socket on the pcb.
-* Plug in a microUSB and set the time using the buttons.
+* Plug in a microUSB and set the time using the buttons. Push both to reset the seconds, and hold both to adjust the brightness.
 
 
 ## PCB design
