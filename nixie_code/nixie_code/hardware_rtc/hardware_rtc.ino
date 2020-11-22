@@ -304,33 +304,13 @@ void displayTime(){
 
 void incrementHour(){
 
-  DateTime nw = rtc.now();
-  int yr = nw.year();
-  int mm = nw.month();
-  int da = nw.day();
-  int hr = nw.hour();
-  int mn = nw.minute();
-  int sec = nw.second();
-
-  hr = hr+1;
-  
-  rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
+  rtc.adjust( rtc.now() + 3600 ) ;
 }
 
 
 void incrementMinute(){
 
-  DateTime nw = rtc.now();
-  int yr = nw.year();
-  int mm = nw.month();
-  int da = nw.day();
-  int hr = nw.hour();
-  int mn = nw.minute();
-  int sec = nw.second();
-
-  mn = mn+1;
-  
-  rtc.adjust(DateTime(yr, mm, da, hr, mn, sec)); //Set the RTC time to the new updated time
+  rtc.adjust( rtc.now() + 60 ) ;
 }
 
 
