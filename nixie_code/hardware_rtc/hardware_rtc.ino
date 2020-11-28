@@ -15,18 +15,18 @@ int hrButton = 4;
 int minButton = 5;
 
 
-int MULTIPLEX_DELAY = 2; //pulse width 2
+static int MULTIPLEX_DELAY = 2; //pulse width 2
 int BLANKING_INTERVAL_OPTIONS[5] = {200,400,800,1600,2400};
 int BLANKING_INTERVAL = BLANKING_INTERVAL_OPTIONS[0]; //microseconds 200
-const long CYCLE_INTERVAL = 1000; //interval between changes for cathode poisoning prevention scheme
-int NUM = 0; //start digit for cathode poisoning prevention
+static long CYCLE_INTERVAL = 1000; //interval between changes for cathode poisoning prevention scheme
+int num = 0; //start digit for cathode poisoning prevention
 unsigned long previousMillis = 0;
 
 //define rtc as either external module or internal
 RTC_DS1307 rtc;
 //RTC_Millis rtc2;
 
-// 0 for digit test 1 for voltage test
+// 0 for digit test 1 for tube test
 int mode = 0;
 
 int hr;
@@ -192,7 +192,7 @@ void displayDigit(int i){
   digitalWrite(D,LOW);
   }
   
-  
+
   if(i==3){
   digitalWrite(A,HIGH);
   digitalWrite(B,HIGH);
@@ -263,9 +263,8 @@ void displayTime(){
   T4 = mn % 10;
   T5 = (sec / 10) % 10;
   T6 = sec % 10;
+
   
-
-
       displayDigit(T1);
       digitalWrite(11, HIGH);
       delay(MULTIPLEX_DELAY);
@@ -335,15 +334,15 @@ void antiPoison(){
 
   if (currentMillis - previousMillis >= CYCLE_INTERVAL) {
     previousMillis = currentMillis;
-    NUM = NUM+1;
+    num = num+1;
 
-    if(NUM >9){
-      NUM = 0;
+    if(num >9){
+      num = 0;
     }
   }
 
   else{
-      displayDigit(NUM);
+      displayDigit(num);
       digitalWrite(6, HIGH);
       delay(MULTIPLEX_DELAY);
       digitalWrite(6,LOW);
